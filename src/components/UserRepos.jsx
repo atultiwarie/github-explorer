@@ -27,7 +27,7 @@ const UserRepos = ({ username }) => {
     };
 
     fetchRepos();
-  }, [username]); // runs whenever username changes
+  }, [username]); 
 
   if (loading)
     return <p className="text-center mt-4">Loading Repositories...</p>;
