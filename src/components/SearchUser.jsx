@@ -28,11 +28,11 @@ const SearchUser = ({onSearch}) => {
           placeholder="Enter your GitHub username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="border p-2 rounded-l-md"
+          className="border p-2 rounded-md w-[250px]"
         />
         <button
           type="submit"
-          className="bg-blue-500 text-white p-2 rounded-r-md"
+          className="bg-blue-500 text-white p-2 rounded-md ml-2 hover:bg-blue-600"
         >
           Search
         </button>
