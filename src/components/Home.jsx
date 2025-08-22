@@ -21,17 +21,15 @@ const Home = () => {
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 min-h-screen text-gray-900 dark:text-gray-100">
-      {/* Header row: heading + search + button */}
+
       <div className="flex items-center justify-between px-6 py-4">
-        {/* Heading */}
+
         <h1 className="text-3xl font-bold">GitHub Explorer</h1>
 
-        {/* Centered Search Bar */}
         <div className="flex-1 flex justify-center mx-4">
           <SearchUser onSearch={setUser} />
         </div>
 
-        {/* Dark Mode Button */}
         <button
           onClick={() => setDarkMode(!darkMode)}
           className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 dark:bg-yellow-400 dark:text-black dark:hover:bg-yellow-300"
@@ -40,7 +38,6 @@ const Home = () => {
         </button>
       </div>
 
-      {/* User Profile Card */}
       {user && (
         <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 text-center max-w-lg mx-auto mt-6">
           <img
@@ -66,7 +63,6 @@ const Home = () => {
         </div>
       )}
 
-      {/* User Repos */}
       {user && <UserRepos username={user.login} />}
     </div>
   );
